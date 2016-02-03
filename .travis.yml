@@ -2,10 +2,3 @@ language: node_js
 node_js:
   - "0.10"
   
-# Gradlew
-
- 
-script:
-  - ./gradlew clean buildlanguage: node_js
-node_js:
-  - "0.10"
