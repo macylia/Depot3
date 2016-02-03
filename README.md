@@ -1,2 +1,3 @@
 # Depot3
-https://travis-ci.org/macylia/Depot3.svg?branch=master
+<img src ="https://travis-ci.org/macylia/Depot3.svg?branch=master">
+
