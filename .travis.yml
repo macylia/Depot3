@@ -17,8 +17,9 @@ cache:
 # Gradlew
 before_install:
  - chmod +x ./gradlew
- 
+  - pip install --user codecov
 script:
   - ./gradlew clean build
   
 after_success: - bash <(curl -s https: //codecov.io/bash) 
+               - codecov
