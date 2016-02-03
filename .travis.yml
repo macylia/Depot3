@@ -3,8 +3,7 @@ node_js:
   - "0.10"
   
 # Gradlew
-before_install:
- - chmod +x ./gradlew
+
  
 script:
   - ./gradlew clean buildlanguage: node_js
