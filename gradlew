@@ -56,11 +56,11 @@ while [ -h "$PRG" ] ; do
     fi
 done
 SAVED="`pwd`"
-cd "`dirname \"$PRG\"`/.." >/dev/null
+cd "`dirname \"$PRG\"`/" >/dev/null
 APP_HOME="`pwd -P`"
 cd "$SAVED" >/dev/null
 
-CLASSPATH=$APP_HOME/lib/gradle-launcher-2.10.jar
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
@@ -157,4 +157,4 @@ function splitJvmOpts() {
 eval splitJvmOpts $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS
 JVM_OPTS[${#JVM_OPTS[*]}]="-Dorg.gradle.appname=$APP_BASE_NAME"
 
-exec "$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" org.gradle.launcher.GradleMain "$@"
+exec "$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
