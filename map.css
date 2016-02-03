@@ -1,0 +1,15 @@
+.indication{
+    position:absolute;
+    visibility:hidden;
+}
+ 
+#pikachu{
+    background-color:red;
+    top:158px;
+    left:229px;
+}
+ 
+#complexe{
+    top:10px;
+    left:213px;
+}

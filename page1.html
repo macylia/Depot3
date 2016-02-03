@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="map.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    </head>
+    <body>
+        premier !
+        <div id="trucageBidon">
+		bbbbbb
+            <div class="indication" id="pikachu">
+                deuxieme!
+            </div>
+            <div class="indication" id="complexe">
+                <img src="photo1.jpg"/>
+            </div>
+            <img src="photo1.jpg" name="mapped" usemap="#happymappy"/>
+        </div>
+        <map name="happymappy">
+            <area shape="rect" coords="0,0,458,316" href="#happymappy"  ALT="zone1:::::::::::::::::::::::::::::::::::::"  id="zone1" onmouseout="$('#pikachu').css('visibility', 'hidden')" onmouseover="$('#pikachu').css('visibility', 'visible')">affiche deuxieme en rouge !!</area>
+            <area shape="rect" coords="0,0,0,0" href="#happymappy"  ALT="zone2^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" id="zone2" onmouseout="$('#complexe').css('visibility', 'visible')" onmouseover="$('#complexe').css('visibility', 'visible')"/>
+        </map>
+    </body>
+</html>
