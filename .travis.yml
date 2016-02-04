@@ -18,6 +18,6 @@ cache:
 before_install:s
   - pip install --user codecov
 script:
-  - ./gradlew jacocoTestReport coveralls
+  - ./gradlew check jacocoTestReport coveralls
   
 after_success: - codecov
